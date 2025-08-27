@@ -22,12 +22,18 @@
                     <div id="panda">
                         <img src="panda.png" id="icon">
                     </div>
-                    <div id="letter">
-                        <h1>selamat ultah kamu</h1>
+                    <div id="covlet">
+                        <div id="letter">
+                            <h1>selamat ultah kamu</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="kotak"></div>
+            <div id="kotak">
+                <img src="keep-dry-icon-size_24.png" id="boxacces1">
+                <img src="noun-fragile-52624.png" id="boxacces">
+                <div id="aks"></div>
+            </div>
         </div>
         <div id="truck">
             <img src="delivery-truck-dark.png">
@@ -38,7 +44,8 @@
         let non = document.getElementById('no');
         let opening = document.getElementById('opening');
         let mail = document.getElementById('mail');
-        
+        let mailanim = document.getElementById('mailanim');
+        let truck = document.getElementById('truck');
 
         function tolak(){
             no.innerHTML = 'Terima Deh';
@@ -47,6 +54,12 @@
         };
         function terima(){
             opening.style.display = 'none';
+            setTimeout(() => {
+                truck.style.display = 'block';
+            }, 500);
+            setTimeout(() => {
+                mailanim.style.display = 'grid';
+            }, 3000);
             mail.style.display = 'block';
         }
     </script>

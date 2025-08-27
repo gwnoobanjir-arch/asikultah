@@ -13,7 +13,6 @@ body{
 
 
 #opening{
-    display: none;
     text-align: center;
 }
 #op{
@@ -52,19 +51,34 @@ body{
     display: grid;
     height: 300px;
     grid-template-rows: 30% auto;
+    animation: naik 4s;
 }
 
+@keyframes naik {
+    0%{
+        top: 68%;
+    }  
+    40%{
+        top: 68%;
+    }  
+    100%{
+        top: 0%;
+    }
+}
+
+#covlet{
+    padding: 0px 5px;
+}
 #letter {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #F9FBFF;
+    border: 2px solid black;
     height: 35vh;
 }
 
-#letter h1{
-    background-color: aqua;
-}
+
 #panda{
     justify-items: center;
 }
@@ -75,18 +89,41 @@ body{
 }
 
 #mailanim{
-    display: grid;
+    display: none;
     grid-template-rows: auto 10%;
     width: 60vw;
     height: 50vh;
 }
 #kotak{
-    background-color: blue;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dd9259;
+    border: 1px solid black;
 }
+#boxacces{
+    position: absolute;
+    right: 20.3vw;
+    bottom: 27.7vh;
+    width: 10px;
+}
+#boxacces1{
+    position: absolute;
+    right: 21.9vw;
+    bottom: 27.7vh;
+    width: 10px;
+}
+/*#aks{
+    border: 2px solid yellow;
+    height: 50%;
+    width: 95%;
+}*/
 
 #truck{
     display: none;
     margin: 0;
+    top: 20.1vh;
     right: 200%;
     position: fixed;
     transform: translateX(50%);
@@ -112,5 +149,4 @@ img{
     100%{
         right: -100%;
     }
-
 }
