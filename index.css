@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 154, 169);
+}
+#cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#opening{
+    display: none;
+    text-align: center;
+}
+#op{
+    display: block;
+}
+#choice{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+#choice div{
+    padding: 5px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#choice div:hover:nth-child(1) {
+    background-color: green;
+}
+#no:hover {
+    background-color: red;
+}
+#non:hover{
+    background-color: green;
+}
+#choice div:hover{
+    cursor: pointer;
+}
+
+#mail{
+    overflow: hidden;
+}
+#covermail{
+    top: 0%;
+    position: relative;
+    display: grid;
+    height: 300px;
+    grid-template-rows: 30% auto;
+}
+
+#letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+#letter h1{
+    background-color: aqua;
+}
+#panda{
+    justify-items: center;
+}
+
+#icon{
+    display: flex;
+    width: 90px;
+}
+
+#mailanim{
+    display: grid;
+    grid-template-rows: auto 10%;
+    width: 60vw;
+    height: 50vh;
+}
+#kotak{
+    background-color: blue;
+}
+
+#truck{
+    display: none;
+    margin: 0;
+    right: 200%;
+    position: fixed;
+    transform: translateX(50%);
+    animation: slide 5s;
+}
+
+img{
+    position: relative;
+    width: 500px;
+
+}
+
+@keyframes slide {
+    0%{
+        right: 200%;
+    }
+    40%{
+        right: 50%;
+    }
+    60%{
+        right: 50%;
+    }
+    100%{
+        right: -100%;
+    }
+}

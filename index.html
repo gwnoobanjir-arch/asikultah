@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="cover">
+        <div id="opening">
+            <h1 id="op">Hi! Kamu ada paket nih</h1>
+            <h3>mau kamu terima?</h3>
+            <div id="choice">
+                <div onclick="terima()">Terima</div>
+                <div id="no" onclick="tolak()">Tolak</div>
+            </div>
+        </div>
+        <div id="mailanim">
+            <div id="mail">
+                <div id="covermail">
+                    <div id="panda">
+                        <img src="panda.png" id="icon">
+                    </div>
+                    <div id="letter">
+                        <h1>selamat ultah kamu</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="kotak"></div>
+        </div>
+        <div id="truck">
+            <img src="delivery-truck-dark.png">
+        </div>
+    </div>
+    <script>
+        let no = document.getElementById('no');
+        let non = document.getElementById('no');
+        let opening = document.getElementById('opening');
+        let mail = document.getElementById('mail');
+        
+
+        function tolak(){
+            no.innerHTML = 'Terima Deh';
+            no.id = 'non';
+            non.setAttribute('onclick','terima()');
+        };
+        function terima(){
+            opening.style.display = 'none';
+            mail.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
