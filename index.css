@@ -13,6 +13,7 @@ body{
 
 
 #opening{
+    display: none;
     text-align: center;
 }
 #op{
@@ -51,7 +52,30 @@ body{
     display: grid;
     height: 300px;
     grid-template-rows: 30% auto;
-    animation: naik 4s;
+    /*animation: naik 4s;*/
+}
+
+#mailanim{
+    display: grid;
+    grid-template-rows: auto 10%;
+    width: 60vw;
+    height: 50vh;
+    animation: muncul 2s;
+}
+
+@keyframes muncul {
+    0%{
+        width: 25vw;
+    }
+}
+
+#kotak{
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dd9259;
+    border: 1px solid black;
 }
 
 @keyframes naik {
@@ -88,37 +112,29 @@ body{
     width: 90px;
 }
 
-#mailanim{
-    display: none;
-    grid-template-rows: auto 10%;
-    width: 60vw;
-    height: 50vh;
-}
-#kotak{
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dd9259;
-    border: 1px solid black;
-}
+
 #boxacces{
     position: absolute;
     right: 20.3vw;
     bottom: 27.7vh;
     width: 10px;
+    opacity: 1;
+    animation: muncullogo 1.8s;
 }
 #boxacces1{
     position: absolute;
     right: 21.9vw;
     bottom: 27.7vh;
     width: 10px;
+    opacity: 1;
+    animation: muncullogo 1.8s;
 }
-/*#aks{
-    border: 2px solid yellow;
-    height: 50%;
-    width: 95%;
-}*/
+
+@keyframes muncullogo {
+    0%{
+      right: 50vw; 
+    }
+}
 
 #truck{
     display: none;
