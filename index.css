@@ -13,7 +13,6 @@ body{
 
 
 #opening{
-    display: none;
     text-align: center;
 }
 #op{
@@ -49,10 +48,10 @@ body{
 #covermail{
     top: 0%;
     position: relative;
-    display: grid;
+    display: none;
     height: 300px;
     grid-template-rows: 30% auto;
-    /*animation: naik 4s;*/
+    animation: naik 4s;
 }
 
 #mailanim{
@@ -165,4 +164,5 @@ img{
     100%{
         right: -100%;
     }
+
 }
