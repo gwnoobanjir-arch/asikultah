@@ -55,7 +55,7 @@ body{
 }
 
 #mailanim{
-    display: grid;
+    display: none;
     grid-template-rows: auto 10%;
     width: 60vw;
     height: 50vh;
@@ -166,3 +166,4 @@ img{
     }
 
 }
+
