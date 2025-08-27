@@ -147,7 +147,7 @@ body{
 #truck{
     display: none;
     margin: 0;
-    top: 20.1vh;
+    top: 20vw;
     right: 200%;
     position: fixed;
     transform: translateX(50%);
