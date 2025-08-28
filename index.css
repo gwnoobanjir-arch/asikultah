@@ -2,7 +2,7 @@
     margin: 0;
 }
 body{
-    background-color: red;
+    background-color: rgb(243, 154, 169);
     overflow: hidden;
 }
 #cover{
@@ -160,6 +160,12 @@ body{
     }
     #mailanim{
         margin-bottom: 30%;
+    }
+    #boxacces{
+        left: 45.5%;
+    }
+    #boxacces1{
+        left: 44.5%;
     }
 }
 
