@@ -150,11 +150,11 @@ body{
 }
 #imgtruck{
     position: relative;
+    width: 70vw;
 }
 
 img{
     position: relative;
-    width: 70vw;
 }
 
 @keyframes slide {
@@ -172,6 +172,7 @@ img{
     }
 
 }
+
 
 
 
