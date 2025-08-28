@@ -57,7 +57,7 @@ body{
 
 #mailanim{
     display: none;
-    margin-bottom: 90%;
+    margin-bottom: 20%;
     grid-template-rows: auto 10%;
     width: 60vw;
     height: 50vh;
@@ -140,7 +140,7 @@ body{
 #covtruck{
     display: none;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: -100%;
     transform: translate(-50%, -50%);
     animation: slide 5s;
@@ -172,6 +172,7 @@ img{
     }
 
 }
+
 
 
 
